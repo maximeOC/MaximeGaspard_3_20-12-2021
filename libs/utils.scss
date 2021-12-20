@@ -1,0 +1,47 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+}
+@mixin btn-exploreur {
+    background-image: $exploreur-btn;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+}
+
+@mixin btn-fonctionnement {
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 10PX;
+    width: 85%;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+}
+@mixin card__name {
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin: 20px;
+    width: 85%;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+@mixin card__heart
+{
+    background-color: $exploreur-btn;
+    display: flex;
+    align-items: flex-end;
+}
