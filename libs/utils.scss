@@ -13,6 +13,29 @@
     cursor: pointer;
 }
 
+@mixin btn-commander {
+    background-image: $exploreur-btn;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    ;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 30px;
+    margin-left: 70px;
+    padding: 15px;
+    
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+    
+}
+@mixin name_restaurant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @mixin btn-fonctionnement {
     background-color: rgb(245, 244, 244);
     display: flex;
@@ -33,7 +56,8 @@
     flex-direction: column;
     border: 2px solid transparent;
     border-radius: 20px;
-    margin: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
     width: 85%;
     font-weight: bold;
     cursor: pointer;
@@ -45,3 +69,49 @@
     display: flex;
     align-items: flex-end;
 }
+@mixin card-meal
+{
+    background-color: rgb(226, 224, 224);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 85%;
+    cursor: pointer;
+}
+
+@mixin entree-plat-dessert
+{
+    font-size: 1.5em;
+    margin-left: 22px;
+    font-weight: 100;
+    
+    width: 40px;
+    border-bottom: 5px $color-tertiary solid;
+    
+}
+
+@mixin cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiary;
+    width: 50px;
+    height: 63px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: 50px;
+    top: 50px;
+    opacity: 1;
+    transition: transform 330ms ease-in-out;
+    & .fa-check-circle {
+      color: #fff;
+      transition: transform 500ms ease-in-out;
+    }
+  }
+  
+ 

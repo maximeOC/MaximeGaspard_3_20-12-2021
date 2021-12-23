@@ -1,11 +1,11 @@
-$color-primary: #9356dc;
-$color-secondary: #ff79Da;
-$color-tertiary: #99E2D0;
-$exploreur-btn: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 
 
+@import "libs/variable";
 @import "libs/utils.scss";
 
+@import "./header";
+@import "./section";
+@import "./footer";
 
 html , body
 {
@@ -21,59 +21,7 @@ h1
     font-family: Shrikhand;
 }
 
-.header__name
-{
-    font-size: MEDIUM;
-    @include center;
-}
 
-.place{
-    @include center;
-    padding: 15px;
-    height: 20%;
-    background-color: rgba(201, 193, 193, 0.384);
-
-    .place__icon{
-        padding-right: 12px;
-        padding-bottom: 2px;
-    }
-
-}
-
-.exploreur
-{
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-    padding: 15px;
-    background-color: rgb(241, 239, 239);
-
-    .exploreur__slogan
-    {
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .exploreur__slogan2
-    {
-        text-align: center;
-        padding: 5px;
-    }
-
-    .exploreur__btn
-    {
-        @include btn-exploreur;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        scale: 1;
-        transition: all 300ms;
-        &:hover
-        {
-            transform: scale(1.13);
-        }
-    }
-}
 .fonctionnement
 {
     
@@ -125,129 +73,5 @@ h1
     }    
 }
 
-.dishes
-{
-   margin-top: 40px;
-   background-color: rgb(235, 232, 232);
-    .restaurant
-    {
-        font-weight: bold;
-        font-size: 20px;
-        padding-left: 22px;
-        padding-top: 15px;
-    }
 
 
-    .card__name
-    {
-        @include card__name ;
-        position: relative;
-            img 
-            {
-                 width:100%;
-                height: 150px;
-                object-fit: cover;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-            }
-            
-            span
-            {
-                font-weight: lighter;
-                margin-left: 10px;
-                margin-bottom: 10px;
-                width: 50%;
-                
-            }
-            p {
-                margin-left: 10px;
-                margin-top: 10px;
-            }
-
-            .card__new
-            {
-                position: absolute;
-                right: 10%;
-                top: 10%;
-                background-color: rgb(161, 226, 161);
-                color: green;
-                padding: 5px;
-                animation-duration: .8s;
-                animation-name: clignoter;
-                animation-iteration-count: 8;
-                transition: none;
-             }
-                @keyframes clignoter {
-                    0%   { opacity:1; }
-                    40%   {opacity:0; }
-                    100% { opacity:1; }
-                }
-
-            .card__heart
-            {
-                align-self: flex-end;
-                color: black;
-                width: fit-content;
-                position: absolute;
-                right: 5%;
-                top: 80%;
-                padding:.2em;
-                cursor: pointer;
-                transition: all 300 ms;
-                scale: 1;
-
-                &:hover
-                {
-                    transform: scale(1.2) ;
-                    background-image: $exploreur-btn;
-                    
-                }
-
-                
-            }
-    }
-    
-    
-    
-}
-
-footer 
-{
-    .footer__contenu
-    {
-        background-color: rgb(24, 23, 23);
-        padding-bottom: 30px;
-        .flex
-        {
-            display: flex;
-            padding-left: 15px;
-            color: #FFF;
-            margin-bottom: 5px;
-        }
-        h4{
-        font-family: shrikhand;
-        margin-left: 20px;
-        padding-top: 15px;
-        margin-bottom: 15px;
-        color: #fff;
-    }
-        .p {
-            margin-left: 15PX;
-            color: #fff;
-            margin-bottom: 5px;
-            
-        }
-        
-        i 
-        {
-            color: #fff;
-        }
-
-        a
-        {
-            text-decoration: none;
-            color: #fff;
-        }
-    }
-    
-}

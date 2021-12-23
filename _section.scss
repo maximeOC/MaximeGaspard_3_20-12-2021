@@ -1,0 +1,210 @@
+.dishes
+{
+   margin-top: 40px;
+   background-color: rgb(235, 232, 232);
+    .restaurant
+    {
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 22px;
+        padding-top: 15px;
+    }
+
+
+    .card__name
+    {
+        @include card__name ;
+        position: relative;
+            img 
+            {
+                 width:100%;
+                height: 150px;
+                object-fit: cover;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            
+            span
+            {
+                font-weight: lighter;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                width: 50%;
+                color: black;
+                
+            }
+            p {
+                margin-left: 10px;
+                margin-top: 10px;
+                color: black;
+                text-decoration: none;
+            }
+
+            .card__new
+            {
+                position: absolute;
+                right: 10%;
+                top: 10%;
+                background-color: rgb(161, 226, 161);
+                color: green;
+                padding: 5px;
+                animation-duration: .8s;
+                animation-name: clignoter;
+                animation-iteration-count: 8;
+                transition: none;
+             }
+                @keyframes clignoter {
+                    0%   { opacity:1; }
+                    40%   {opacity:0; }
+                    100% { opacity:1; }
+                }
+    
+                
+            .card__heart
+            {
+                position: absolute;
+                bottom: 7%;
+                right: 10%;
+                font-size: 1.4em;
+
+                &:hover
+                {
+                    border: none;
+                    background: $exploreur-btn;
+                    
+                                
+                }
+            }
+    
+}
+}
+
+section.section__restaurant
+{
+    background-color: rgb(240, 238, 238);
+    border-top-right-radius: 30PX;
+    border-top-left-radius: 30px;
+    width: 100%;
+    
+    
+    .name__restaurant
+        {
+            @include name_restaurant;
+            margin-bottom: 30PX;
+            i {
+            padding-top: 10px;
+            }
+        }
+    .meal__entree
+        {
+            .entree_plat_dessert
+             {
+                @include entree-plat-dessert;
+                    }
+                .meal__entree-1
+                    {
+                    position: relative;
+                    @include card-meal;
+                    
+                        
+                         h4 {
+                            padding-bottom: 5px;
+                            }
+                            .price 
+                            {
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                            }
+                        }
+                }
+    .meal__plat{
+
+        .entree_plat_dessert
+             {
+                @include entree-plat-dessert
+            }
+
+            .meal__plat-1
+            {
+                @include card-meal;
+                position: relative;
+
+                .price
+                {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                }
+
+
+            }
+
+
+        }     
+        
+    .meal__dessert
+    {
+        .entree_plat_dessert
+            {
+                @include entree-plat-dessert
+            }
+            .meal__dessert-1
+            {
+                @include card-meal;
+                position: relative;
+
+                .price
+                {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+        
+    }
+
+    .btn__commander
+    {
+        @include btn-commander ;
+        scale: 1;
+        transition: all 300ms;
+        &:hover
+        {
+            transform: scale(1.13);
+        }
+
+        p 
+        {
+            
+            padding-left: 60px;
+            padding-top: 5px;
+        }
+    }
+                .cross
+                {
+                    padding: 1rem;
+                    width: 10%;
+                    position: absolute;
+                    right: 0;
+                    bottom: 2px;
+                    
+                    background-color: #ffffff;
+                    border-radius: 0.5rem;
+  
+                    border-right: 0 solid #00ff99;
+                    transition: border-right 500ms ease-in-out, padding-left 3000ms ease-in-out;
+                
+                &:hover  {
+                    padding-left: 0.1rem;
+                    border-right: 2rem solid #00ff99;
+            
+      
+    }
+  }
+                
+}
+     
+
+
+
