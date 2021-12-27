@@ -1,0 +1,19 @@
+{
+  "name": "maximegaspard_3_20-12-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch /style.scss:/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximeOC/MaximeGaspard_3_20-12-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximeOC/MaximeGaspard_3_20-12-2021/issues"
+  },
+  "homepage": "https://github.com/maximeOC/MaximeGaspard_3_20-12-2021#readme"
+}
