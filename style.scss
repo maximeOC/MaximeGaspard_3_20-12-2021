@@ -1,11 +1,13 @@
 
-
+@import "libs/loader";
 @import "libs/variable";
 @import "libs/utils.scss";
+@import "libs/animation";
 
-@import "./header";
-@import "./section";
-@import "./footer";
+@import "layout/header";
+@import "layout/section";
+@import "layout/footer";
+@import "layout/btn";
 
 html , body
 {
@@ -22,56 +24,6 @@ h1
 }
 
 
-.fonctionnement
-{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
-    .fonction {
-        font-size: 30px;
-        padding-right: 170px;
-        font-weight: bold;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .btn__fonctionnement
-    {
-        @include btn-fonctionnement;
-            &--number 
-            {
-            position: absolute;
-            padding: 3px 8px 3px 8px;
-            left: 5%;
-            background-image: $exploreur-btn;
-            border-radius: 50%;
-
-            }
-
-        i 
-        {
-            font-size: 20px;
-            margin-right: 20px;
-            
-        }
-        p 
-        {
-            font-size: 20px;
-        }
-
-        &:hover
-        {
-            background-color: rgb(250, 235, 250);
-        }
-        i:hover
-        {
-            color: $color-primary;
-        }
-
-    }    
-}
 
 
 

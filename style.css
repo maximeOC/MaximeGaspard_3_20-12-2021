@@ -1,3 +1,124 @@
+.loader {
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  -webkit-animation: loader;
+          animation: loader;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: opacity 10s ease-in-out;
+  transition: opacity 10s ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.loader__page {
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 10px white;
+  border-top-color: #ff79da;
+  border-bottom-color: #99e2d0;
+  border-radius: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: rotate linear infinite;
+          animation: rotate linear infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.loader__page .fork {
+  font-size: 50px;
+}
+
+.loader span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  font-family: Shrikhand;
+  font-size: 50px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+
+@keyframes loader {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+
+.animation {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-51%);
+          transform: translateX(-51%);
+  bottom: 4px;
+  font-size: 0;
+  font-weight: bold;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  color: #9356dc;
+}
+
 .header__name {
   font-size: MEDIUM;
   display: -webkit-box;
@@ -34,6 +155,7 @@ header a i {
   max-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 
 .place {
@@ -109,6 +231,7 @@ header a i {
 
 .dishes {
   margin-top: 40px;
+  padding: 10PX;
   background-color: #ebe8e8;
 }
 
@@ -130,7 +253,7 @@ header a i {
           flex-direction: column;
   border: 2px solid transparent;
   border-radius: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 30px;
   width: 85%;
   font-weight: bold;
@@ -159,6 +282,9 @@ header a i {
   margin-left: 10px;
   margin-top: 10px;
   color: black;
+}
+
+.dishes .card__name a {
   text-decoration: none;
 }
 
@@ -205,15 +331,14 @@ header a i {
 
 .dishes .card__name .card__heart {
   position: absolute;
-  bottom: 7%;
-  right: 10%;
+  right: 28px;
+  bottom: 17px;
   font-size: 1.4em;
+  cursor: pointer;
 }
 
-.dishes .card__name .card__heart:hover {
-  border: none;
-  background: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+.dishes .card__name .card__heart:hover .animation {
+  font-size: 21px;
 }
 
 section.section__restaurant {
@@ -221,6 +346,8 @@ section.section__restaurant {
   border-top-right-radius: 30PX;
   border-top-left-radius: 30px;
   width: 100%;
+  position: absolute;
+  top: 250px;
 }
 
 section.section__restaurant .name__restaurant {
@@ -230,11 +357,25 @@ section.section__restaurant .name__restaurant {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-bottom: 30PX;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-section.section__restaurant .name__restaurant i {
+section.section__restaurant .name__restaurant h1 {
+  padding-right: 70px;
   padding-top: 10px;
+}
+
+section.section__restaurant .name__restaurant .card__heart {
+  position: absolute;
+  right: 50px;
+  bottom: 3px;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+section.section__restaurant .name__restaurant .card__heart:hover .animation {
+  font-size: 21px;
 }
 
 section.section__restaurant .meal__entree .entree_plat_dessert {
@@ -368,24 +509,6 @@ section.section__restaurant .btn__commander p {
   padding-top: 5px;
 }
 
-section.section__restaurant .cross {
-  padding: 1rem;
-  width: 10%;
-  position: absolute;
-  right: 0;
-  bottom: 2px;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  border-right: 0 solid #00ff99;
-  -webkit-transition: border-right 500ms ease-in-out, padding-left 3000ms ease-in-out;
-  transition: border-right 500ms ease-in-out, padding-left 3000ms ease-in-out;
-}
-
-section.section__restaurant .cross:hover {
-  padding-left: 0.1rem;
-  border-right: 2rem solid #00ff99;
-}
-
 footer {
   margin: 0;
   background-color: black;
@@ -422,18 +545,6 @@ footer i {
 footer a {
   text-decoration: none;
   color: #fff;
-}
-
-html, body {
-  font-family: roboto;
-}
-
-* {
-  margin: 0;
-}
-
-h1 {
-  font-family: Shrikhand;
 }
 
 .fonctionnement {
@@ -502,5 +613,17 @@ h1 {
 
 .fonctionnement .btn__fonctionnement i:hover {
   color: #9356dc;
+}
+
+html, body {
+  font-family: roboto;
+}
+
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: Shrikhand;
 }
 /*# sourceMappingURL=style.css.map */
