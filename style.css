@@ -116,7 +116,136 @@
   font-weight: bold;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
-  color: #9356dc;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: transparent;
+  background-clip: text;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes style {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes style {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.meal__entree-1 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+.meal__entree-2 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+.meal__entree-3 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.meal__entree-4 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+.meal__plat-1 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.meal__plat-2 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.meal__plat-3 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+.meal__dessert-1 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+
+.meal__dessert-2 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+}
+
+.meal__dessert-3 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
 }
 
 .header__name {
@@ -155,7 +284,6 @@ header a i {
   max-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
 }
 
 .place {
@@ -386,7 +514,7 @@ section.section__restaurant .meal__entree .entree_plat_dessert {
   border-bottom: 5px #99E2D0 solid;
 }
 
-section.section__restaurant .meal__entree .meal__entree-1 {
+section.section__restaurant .meal__entree-1 {
   position: relative;
   background-color: #e2e0e0;
   display: -webkit-box;
@@ -402,16 +530,68 @@ section.section__restaurant .meal__entree .meal__entree-1 {
   margin: 20px;
   width: 85%;
   cursor: pointer;
+  overflow: hidden;
 }
 
-section.section__restaurant .meal__entree .meal__entree-1 h4 {
+section.section__restaurant .meal__entree-1 h4 {
   padding-bottom: 5px;
 }
 
-section.section__restaurant .meal__entree .meal__entree-1 .price {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+section.section__restaurant .meal__entree-2 {
+  position: relative;
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__entree-3 {
+  position: relative;
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__entree-4 {
+  position: relative;
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 section.section__restaurant .meal__plat .entree_plat_dessert {
@@ -422,7 +602,7 @@ section.section__restaurant .meal__plat .entree_plat_dessert {
   border-bottom: 5px #99E2D0 solid;
 }
 
-section.section__restaurant .meal__plat .meal__plat-1 {
+section.section__restaurant .meal__plat-1 {
   background-color: #e2e0e0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,12 +618,45 @@ section.section__restaurant .meal__plat .meal__plat-1 {
   width: 85%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
-section.section__restaurant .meal__plat .meal__plat-1 .price {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+section.section__restaurant .meal__plat-2 {
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__plat-3 {
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 section.section__restaurant .meal__dessert .entree_plat_dessert {
@@ -454,7 +667,7 @@ section.section__restaurant .meal__dessert .entree_plat_dessert {
   border-bottom: 5px #99E2D0 solid;
 }
 
-section.section__restaurant .meal__dessert .meal__dessert-1 {
+section.section__restaurant .meal__dessert-1 {
   background-color: #e2e0e0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,12 +683,45 @@ section.section__restaurant .meal__dessert .meal__dessert-1 {
   width: 85%;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
-section.section__restaurant .meal__dessert .meal__dessert-1 .price {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+section.section__restaurant .meal__dessert-2 {
+  position: relative;
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__dessert-3 {
+  position: relative;
+  background-color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  width: 85%;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 section.section__restaurant .btn__commander {
@@ -507,6 +753,52 @@ section.section__restaurant .btn__commander:hover {
 section.section__restaurant .btn__commander p {
   padding-left: 60px;
   padding-top: 5px;
+}
+
+section.section__restaurant .meal__rotate {
+  position: absolute;
+  margin-right: -4em;
+  top: 0px;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 90px;
+  height: 100%;
+}
+
+section.section__restaurant .meal__rotate:hover {
+  margin-right: -0.5em;
+  -webkit-transition: margin-right 1s ease-in-out;
+  transition: margin-right 1s ease-in-out;
+}
+
+section.section__restaurant .meal__rotate .meal__rotate__box {
+  background-color: #99E2D0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+section.section__restaurant .meal__rotate .meal__rotate__box:hover .circle-rotate {
+  -webkit-animation: rotation;
+          animation: rotation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 footer {

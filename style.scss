@@ -1,4 +1,4 @@
-
+@import "/typography";
 @import "libs/loader";
 @import "libs/variable";
 @import "libs/utils.scss";
@@ -9,19 +9,7 @@
 @import "layout/footer";
 @import "layout/btn";
 
-html , body
-{
-    font-family: roboto;
-    
-}
-*{
-    margin: 0;
-}
 
-h1
-{
-    font-family: Shrikhand;
-}
 
 
 
