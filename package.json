@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch /style.scss:/style.css"
+    "test": "./node_modules/.bin/sass --watch ./sass/style.scss:./style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maximeOC/MaximeGaspard_3_20-12-2021/issues"
   },
-  "homepage": "https://github.com/maximeOC/MaximeGaspard_3_20-12-2021#readme"
+  "homepage": "https://github.com/maximeOC/MaximeGaspard_3_20-12-2021#readme",
+  "dependencies": {
+    "sass": "^1.45.2"
+  }
 }

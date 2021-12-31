@@ -1,0 +1,253 @@
+.dishes
+{
+   margin-top: 40px;
+   padding: 10PX;
+   background-color: rgb(235, 232, 232);
+    .restaurant
+    {
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 22px;
+        padding-top: 15px;
+    }
+
+
+    .card__name
+    {
+        @include card__name ;
+        position: relative;
+        
+            img 
+            {
+                 width:100%;
+                height: 150px;
+                object-fit: cover;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            
+            span
+            {
+                font-weight: lighter;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                width: 50%;
+                color: black;
+                
+                
+            }
+            p {
+                margin-left: 10px;
+                margin-top: 10px;
+                color: black;
+            }
+            a 
+            {
+                text-decoration: none;
+            }
+
+            .card__new
+            {
+                position: absolute;
+                right: 10%;
+                top: 10%;
+                background-color: rgb(161, 226, 161);
+                color: green;
+                padding: 5px;
+                animation-duration: .8s;
+                animation-name: clignoter;
+                animation-iteration-count: 8;
+                transition: none;
+             }
+                @keyframes clignoter {
+                    0%   { opacity:1; }
+                    40%   {opacity:0; }
+                    100% { opacity:1; }
+                }
+        .card__heart
+                {
+                    position: absolute;
+                    right: 28px;
+                    bottom: 17px;
+                    font-size: 1.4em;
+                    cursor: pointer;
+                    &:hover .animation
+                    {
+                        font-size: 21px;
+                        
+                    }
+                }   
+
+}
+}
+
+section.section__restaurant
+{
+    background-color: rgb(240, 238, 238);
+    border-top-right-radius: 30PX;
+    border-top-left-radius: 30px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    
+    
+    .name__restaurant
+        {
+            @include name_restaurant;
+            margin-bottom: 20px;
+            position:relative;
+
+            h1 {
+                padding-right: 70px;
+                padding-top: 10px;
+            }
+            .card__heart
+                {
+                    position: absolute;
+                    right: 50px;
+                    bottom: 3px;
+                    font-size: 1.4em;
+                    cursor: pointer;
+
+                    &:hover .animation
+                    {
+                        font-size: 21px;
+                        
+                    }
+                } 
+        }
+    .meal__entree
+        {
+            .entree_plat_dessert
+             {
+                @include entree-plat-dessert;
+                    }
+                &-1 , &-2 , &-3 , &-4  
+                {
+                    position: relative;
+                    @include card-meal;
+                    overflow: hidden;
+                    &:hover .meal__rotate
+                    {
+                        margin-right: -0.5em ;
+                        transition: margin-right 1s ease-in-out;
+                        .circle-rotate
+                        {
+                            animation: rotation;
+                        animation-duration: 1s;
+                        }
+                    }
+                }
+
+        }
+    .meal__plat{
+
+        .entree_plat_dessert
+             {
+                @include entree-plat-dessert
+            }
+
+            &-1 , &-2 , &-3
+            {
+                @include card-meal;
+                position: relative;
+                overflow: hidden;
+                &:hover .meal__rotate
+                    {
+                        margin-right: -0.5em ;
+                        transition: margin-right 1s ease-in-out;
+                        
+                        .circle-rotate
+                        {
+                            animation: rotation;
+                        animation-duration: 1s;
+                        }
+                    }
+            }
+
+
+        }     
+        
+    .meal__dessert
+    {
+        
+        .entree_plat_dessert
+            {
+                @include entree-plat-dessert
+            }
+            &-1 , &-2 , &-3
+            {
+                position: relative;
+                    @include card-meal;
+                    overflow: hidden;
+            
+                    &:hover .meal__rotate 
+                    {
+                        margin-right: -0.5em ;
+                        transition: margin-right 1s ease-in-out;
+                        
+
+                        .circle-rotate
+                        {
+                            animation: rotation;
+                            animation-duration: 1s;
+                        }
+                        
+                        
+                    }
+
+
+         }
+}
+
+    .btn__commander
+    {
+        @include btn-commander ;
+        scale: 1;
+        transition: all 300ms;
+        &:hover
+        {
+            transform: scale(1.13);
+        }
+
+        p 
+        {
+            
+            padding-left: 60px;
+            padding-top: 5px;
+        }
+    }
+
+.meal__rotate
+                {
+                    position: absolute;
+                    margin-right: -4em;
+                    top: 0px;
+                    right: 5px;
+                    display: flex;
+                    align-items: baseline;
+                    width: 90px;
+                    height: 100%;
+
+                    text-overflow: ellipsis;
+                        white-space: nowrap;
+
+
+                   
+                    
+                    .meal__rotate__box
+                {
+                    background-color: $color-tertiary;
+                
+                    color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                    font-size: 1.5em;
+                }                   
+}
+            
+}

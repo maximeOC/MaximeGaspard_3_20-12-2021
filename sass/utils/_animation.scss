@@ -1,0 +1,102 @@
+.animation{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+    bottom: 4px;
+    font-size: 0;
+    font-weight: bold;
+    transition-duration: 0.7s;
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    color: transparent;
+    background-clip: text; 
+  }
+
+  @keyframes rotation
+{
+   from {
+  transform: rotate(120deg);
+   }
+  to {
+  transform: rotate(360deg);
+  }
+} 
+@keyframes style 
+{
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.meal__entree
+
+{
+  &-1
+  {
+    animation: style;
+    animation-duration: 0.2s;
+  }
+  &-2
+  {
+    animation: style;
+    animation-duration: 0.4s;
+  }
+  &-3
+  {
+    animation: style;
+    animation-duration: 0.6s;
+  }
+  &-4
+  {
+    animation: style;
+    animation-duration: 0.7s;
+  }
+}
+
+.meal__plat
+{
+  &-1
+  {
+    animation: style;
+    animation-duration: 0.8s;
+  }
+  &-2
+  {
+    animation: style;
+    animation-duration: 1s;
+  }
+  &-3
+  {
+    animation: style;
+    animation-duration: 1.2s;
+  }
+}
+
+.meal__dessert
+{
+  &-1
+  {
+    animation: style;
+    animation-duration: 1.4s;
+  }
+  &-2
+  {
+    animation: style;
+    animation-duration: 1.6s;
+  }
+  &-3
+  {
+    animation: style;
+    animation-duration: 1.8s;
+  }
+}
+
+    
+
