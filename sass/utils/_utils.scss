@@ -14,16 +14,15 @@
 }
 
 @mixin btn-commander {
-    background-image: $exploreur-btn;
+    
     border: 1px solid transparent;
     border-radius: 30px;
-    ;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    width: 50%;
+    background-image: $exploreur-btn;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 10px;
     height: 30px;
-    margin-left: 70px;
-    padding: 15px;
     color: #fff;
     font-weight: bold;
     box-shadow: 4px 4px 6px #aaa;
@@ -86,12 +85,19 @@
     font-size: 1.5em;
     margin-left: 22px;
     font-weight: 100;
-    
     width: 40px;
     border-bottom: 5px $color-tertiary solid;
     
 }
 
-
+@mixin breakpoint($point)
+{
+    @if $point == tablette {
+        @media screen and(min-width: 900px) { @content; }
+    }
+    @else if $point ==  desktop {
+        @media screen and(min-width: 1100px) { @content; }
+    }
+}
   
  

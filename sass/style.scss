@@ -1,15 +1,19 @@
 @import "./asset/typography";
 
+@import "./utils/_animation.scss";
+@import "./utils/_loader.scss";
+@import "./utils/_variable.scss";
+@import "./utils/_utils.scss";
+
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/section";
 
-@import "./utils/animation";
-@import "./utils/loader";
-@import "./utils/variable";
-@import "./utils/utils";
-
 @import "./components/btn";
+
+
+
+
 
 
 

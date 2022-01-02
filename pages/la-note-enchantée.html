@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../sass/style.css">
     <title>La palette du gout</title>
 </head>
 <body>
@@ -17,26 +17,25 @@
         <i class="fas fa-arrow-left"></i>
         <h1> Ohmyfood </h1>
         </a>
-        <img class="header__image" src="./jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="menu gastronomique">
+        <img class="header__image" src="../restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="menu gastronomique">
 </header>
 
 <section class="section__restaurant">
 
     <div class="name__restaurant">
-        <h1>La palette du gout</h1>
+        <h1>La note enchantée</h1>
         <div class="card__heart">
             <i class="far fa-heart"></i>
-            <i class="far fa-heart animation"></i> 
+            <i class="far fa-heart animation"></i>  
         </div>
     </div>
-
+<div class="directionrow">
     <div class="meal__entree">
         <p class="entree_plat_dessert">Entrées</p>
 
             <div class="meal__entree-1">
-                <h4>Fricassée d'escargot</h4>
-                <p>Au piment d'espelette</p>
-                
+                <h4>Ravioles de foie gras</h4>
+                <p>Accompagnés de leur crème à la truffe</p>
                 <div class="meal__rotate">
                     <span class="price">25€ </span>
                         <div class="meal__rotate__box">
@@ -45,8 +44,8 @@
                 </div>
             </div>
             <div class="meal__entree-2">
-                <h4>Foie gras de canard mi-cuit</h4> 
-                <p>Et ses copeaux de truffe</p>
+                <h4>caviar osciètre</h4> 
+                <p>Sur blini à la farine de blé noir</p>
                 <div class="meal__rotate">
                     <span class="price">35€ </span>
                         <div class="meal__rotate__box">
@@ -55,10 +54,20 @@
                 </div>
             </div>
             <div class="meal__entree-3">
-                <h4>Fricassée d'escargot</h4>
-                <p>Au piment d'espelette</p>
+                <h4>Homard et espuma de </h4>
+                <p>Mariné aux zests d'orange</p>
                 <div class="meal__rotate">
                     <span class="price">20€ </span>
+                        <div class="meal__rotate__box">
+                            <i class="fas fa-check-circle circle-rotate"></i>
+                        </div>
+                </div>
+            </div>
+            <div class="meal__entree-4">
+                <h4>Foie gras de canard cuit entier</h4>
+                <p>Confiture de figue et pain toasté</p>
+                <div class="meal__rotate">
+                    <span class="price">35€ </span>
                         <div class="meal__rotate__box">
                             <i class="fas fa-check-circle circle-rotate"></i>
                         </div>
@@ -70,18 +79,17 @@
         <p class="entree_plat_dessert">PLATS</p>
 
             <div class="meal__plat-1">
-                <h4>Filet de boeuf au herbes</h4>
-                <p>Accompagné de sa ribambelle de légumes</p>
-                
+                <h4>Noix de coquilles Saint-Jacques </h4>
+                <p>Sur lit de purée de céleri-rave</p>
                 <div class="meal__rotate">
-                    <span class="price">40€ </span>
+                    <span class="price">23€ </span>
                         <div class="meal__rotate__box">
                             <i class="fas fa-check-circle circle-rotate"></i>
                         </div>
                 </div>
             </div>
             <div class="meal__plat-2">
-                <h4>Parmentier de queue de boeuf</h4> 
+                <h4>langoustine poêlée</h4> 
                 <p>A la truffe noire sur sa purée de panais</p>
                 <div class="meal__rotate">
                     <span class="price">35€ </span>
@@ -90,9 +98,9 @@
                         </div>
                 </div>
             </div>
-            <div class="meal__plat-3">
-                <h4>Filet de turbo</h4>
-                <p>Aux agrumes</p>
+            <div class="meal__plat-2">
+                <h4>Mijoté de queue de boeuf</h4>
+                <p>Et riz sauvage aux zest de citron</p>
                 <div class="meal__rotate">
                     <span class="price">44€ </span>
                         <div class="meal__rotate__box">
@@ -106,8 +114,8 @@
         <p class="entree_plat_dessert">DESSERTS</p>
 
             <div class="meal__dessert-1">
-                <h4>Fricassée d'escargot</h4>
-                <p>Au piment d'espelette</p>
+                <h4>Macaron noisette et chocoalt</h4>
+                <p>Glace au caramel brun et sel de guérande</p>
                 <div class="meal__rotate">
                     <span class="price">18€ </span>
                         <div class="meal__rotate__box">
@@ -116,8 +124,8 @@
                 </div>
             </div>
             <div class="meal__dessert-2">
-                <h4>Foie gras de canard mi-cuit</h4> 
-                <p>Et ses copeaux de truffe</p>
+                <h4>Baba au rhum revisité</h4> 
+                <p>Avec son coulis de citron</p>
                 <div class="meal__rotate">
                     <span class="price">22€ </span>
                         <div class="meal__rotate__box">
@@ -126,8 +134,8 @@
                 </div>
             </div>
             <div class="meal__dessert-3">
-                <h4>Fricassée d'escargot</h4>
-                <p>Au piment d'espelette</p>
+                <h4>Tarte meringuée</h4>
+                <p>Destructurée</p>
                 <div class="meal__rotate">
                     <span class="price">23€ </span>
                         <div class="meal__rotate__box">
@@ -136,11 +144,12 @@
                 </div>
             </div>
     </div>
-
+</div>
+    <div class="boutonbloc">
     <div class="btn__commander"> 
        <p>Commander</p> 
     </div>
-    
+    </div>
     <footer>
   
         <h4 class="footer_name">ohmyfood</h4> 
@@ -153,7 +162,6 @@
     </footer>
 
 </section>
-
 
 
 

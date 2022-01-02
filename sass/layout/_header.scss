@@ -4,6 +4,7 @@
     font-size: MEDIUM;
     @include center;
 }
+
 header a
 {
     display: flex;
@@ -12,16 +13,22 @@ header a
     color: black;
 
      h1 {
-
-        padding-left: 20%;
+        margin-left: 25%;
+        @include breakpoint(tablette)
+        {
+            margin-left: 40%;
+        }
      }
      i {
         font-size: 20px;
-        padding-left: 5%;
         padding-top: 10px;
+        margin-left: 10px;
+        
      }
 
 }
+
+
 .header__image 
      {
          width: 100%;

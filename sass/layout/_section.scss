@@ -1,17 +1,33 @@
 .dishes
 {
-   margin-top: 40px;
+   
    padding: 10PX;
    background-color: rgb(235, 232, 232);
+   
     .restaurant
     {
         font-weight: bold;
         font-size: 20px;
         padding-left: 22px;
         padding-top: 15px;
+        @include breakpoint(tablette)
+        {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            
+        }
     }
 
-
+    .card 
+    {
+        @include breakpoint(tablette)
+        {
+            display: flex;
+            margin-top: 10px;
+            padding-right: 30px;
+            padding-top: 10px;
+        }
     .card__name
     {
         @include card__name ;
@@ -71,13 +87,18 @@
                     bottom: 17px;
                     font-size: 1.4em;
                     cursor: pointer;
+                    @include breakpoint(tablette)
+                    {
+                        right: 5px;
+                    }
                     &:hover .animation
                     {
                         font-size: 21px;
                         
                     }
+                    
                 }   
-
+            }
 }
 }
 
@@ -116,8 +137,24 @@ section.section__restaurant
                     }
                 } 
         }
+    .directionrow
+    {
+        @include breakpoint(tablette)
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:15px;
+        }
+    }
+    
     .meal__entree
         {
+            @include breakpoint(tablette)
+            {
+                width: 30%;
+            }
             .entree_plat_dessert
              {
                 @include entree-plat-dessert;
@@ -141,6 +178,10 @@ section.section__restaurant
 
         }
     .meal__plat{
+        @include breakpoint(tablette)
+            {
+                width: 30%;
+            }
 
         .entree_plat_dessert
              {
@@ -170,6 +211,10 @@ section.section__restaurant
         
     .meal__dessert
     {
+        @include breakpoint(tablette)
+            {
+                width: 30%;
+            }
         
         .entree_plat_dessert
             {
@@ -200,6 +245,12 @@ section.section__restaurant
          }
 }
 
+.boutonbloc
+{
+    
+    display: flex;
+    justify-content: center;
+}
     .btn__commander
     {
         @include btn-commander ;
@@ -213,7 +264,7 @@ section.section__restaurant
         p 
         {
             
-            padding-left: 60px;
+            padding-left: 80px;
             padding-top: 5px;
         }
     }
@@ -228,12 +279,6 @@ section.section__restaurant
                     align-items: baseline;
                     width: 90px;
                     height: 100%;
-
-                    text-overflow: ellipsis;
-                        white-space: nowrap;
-
-
-                   
                     
                     .meal__rotate__box
                 {
@@ -249,5 +294,5 @@ section.section__restaurant
                     font-size: 1.5em;
                 }                   
 }
-            
 }
+

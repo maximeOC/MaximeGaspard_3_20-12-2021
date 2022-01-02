@@ -85,71 +85,71 @@ h1 {
 .meal__entree-1 {
   -webkit-animation: style;
           animation: style;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-}
-
-.meal__entree-2 {
-  -webkit-animation: style;
-          animation: style;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
 }
 
-.meal__entree-3 {
-  -webkit-animation: style;
-          animation: style;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-
-.meal__entree-4 {
-  -webkit-animation: style;
-          animation: style;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-}
-
-.meal__plat-1 {
+.meal__entree-2 {
   -webkit-animation: style;
           animation: style;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
 }
 
-.meal__plat-2 {
+.meal__entree-3 {
   -webkit-animation: style;
           animation: style;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.meal__plat-3 {
-  -webkit-animation: style;
-          animation: style;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-}
-
-.meal__dessert-1 {
+.meal__entree-4 {
   -webkit-animation: style;
           animation: style;
   -webkit-animation-duration: 1.4s;
           animation-duration: 1.4s;
 }
 
+.meal__plat-1 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+}
+
+.meal__plat-2 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+}
+
+.meal__plat-3 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 2.6s;
+          animation-duration: 2.6s;
+}
+
+.meal__dessert-1 {
+  -webkit-animation: style;
+          animation: style;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .meal__dessert-2 {
   -webkit-animation: style;
           animation: style;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
+  -webkit-animation-duration: 3.4s;
+          animation-duration: 3.4s;
 }
 
 .meal__dessert-3 {
   -webkit-animation: style;
           animation: style;
-  -webkit-animation-duration: 1.8s;
-          animation-duration: 1.8s;
+  -webkit-animation-duration: 3.8s;
+          animation-duration: 3.8s;
 }
 
 .loader {
@@ -261,9 +261,8 @@ h1 {
 }
 
 footer {
-  margin: 0;
   background-color: #353535;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 footer .flex {
@@ -275,6 +274,17 @@ footer .flex {
   margin-bottom: 5px;
 }
 
+@media screen and (min-width: 900px) {
+  footer .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer .footer_name {
   font-family: shrikhand;
   margin-left: 20px;
@@ -283,10 +293,32 @@ footer .footer_name {
   color: #fff;
 }
 
+@media screen and (min-width: 900px) {
+  footer .footer_name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer .p, footer .flex p {
   margin-left: 10PX;
   color: #fff;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  footer .p, footer .flex p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer i {
@@ -320,13 +352,19 @@ header a {
 }
 
 header a h1 {
-  padding-left: 20%;
+  margin-left: 25%;
+}
+
+@media screen and (min-width: 900px) {
+  header a h1 {
+    margin-left: 40%;
+  }
 }
 
 header a i {
   font-size: 20px;
-  padding-left: 5%;
   padding-top: 10px;
+  margin-left: 10px;
 }
 
 .header__image {
@@ -412,7 +450,6 @@ header a i {
 }
 
 .dishes {
-  margin-top: 40px;
   padding: 10PX;
   background-color: #ebe8e8;
 }
@@ -424,7 +461,30 @@ header a i {
   padding-top: 15px;
 }
 
-.dishes .card__name {
+@media screen and (min-width: 900px) {
+  .dishes .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .dishes .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+}
+
+.dishes .card .card__name {
   background-color: #f5f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,7 +503,7 @@ header a i {
   position: relative;
 }
 
-.dishes .card__name img {
+.dishes .card .card__name img {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -452,7 +512,7 @@ header a i {
   border-top-right-radius: 20px;
 }
 
-.dishes .card__name span {
+.dishes .card .card__name span {
   font-weight: lighter;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -460,17 +520,17 @@ header a i {
   color: black;
 }
 
-.dishes .card__name p {
+.dishes .card .card__name p {
   margin-left: 10px;
   margin-top: 10px;
   color: black;
 }
 
-.dishes .card__name a {
+.dishes .card .card__name a {
   text-decoration: none;
 }
 
-.dishes .card__name .card__new {
+.dishes .card .card__name .card__new {
   position: absolute;
   right: 10%;
   top: 10%;
@@ -511,7 +571,7 @@ header a i {
   }
 }
 
-.dishes .card__name .card__heart {
+.dishes .card .card__name .card__heart {
   position: absolute;
   right: 28px;
   bottom: 17px;
@@ -519,7 +579,13 @@ header a i {
   cursor: pointer;
 }
 
-.dishes .card__name .card__heart:hover .animation {
+@media screen and (min-width: 900px) {
+  .dishes .card .card__name .card__heart {
+    right: 5px;
+  }
+}
+
+.dishes .card .card__name .card__heart:hover .animation {
   font-size: 21px;
 }
 
@@ -558,6 +624,31 @@ section.section__restaurant .name__restaurant .card__heart {
 
 section.section__restaurant .name__restaurant .card__heart:hover .animation {
   font-size: 21px;
+}
+
+@media screen and (min-width: 900px) {
+  section.section__restaurant .directionrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section.section__restaurant .meal__entree {
+    width: 30%;
+  }
 }
 
 section.section__restaurant .meal__entree .entree_plat_dessert {
@@ -600,6 +691,12 @@ section.section__restaurant .meal__entree-1:hover .meal__rotate .circle-rotate, 
           animation-duration: 1s;
 }
 
+@media screen and (min-width: 900px) {
+  section.section__restaurant .meal__plat {
+    width: 30%;
+  }
+}
+
 section.section__restaurant .meal__plat .entree_plat_dessert {
   font-size: 1.5em;
   margin-left: 22px;
@@ -638,6 +735,12 @@ section.section__restaurant .meal__plat-1:hover .meal__rotate .circle-rotate, se
           animation: rotation;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+@media screen and (min-width: 900px) {
+  section.section__restaurant .meal__dessert {
+    width: 30%;
+  }
 }
 
 section.section__restaurant .meal__dessert .entree_plat_dessert {
@@ -680,17 +783,25 @@ section.section__restaurant .meal__dessert-1:hover .meal__rotate .circle-rotate,
           animation-duration: 1s;
 }
 
+section.section__restaurant .boutonbloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 section.section__restaurant .btn__commander {
-  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  width: 50%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  padding: 10px;
   height: 30px;
-  margin-left: 70px;
-  padding: 15px;
   color: #fff;
   font-weight: bold;
   -webkit-box-shadow: 4px 4px 6px #aaa;
@@ -707,7 +818,7 @@ section.section__restaurant .btn__commander:hover {
 }
 
 section.section__restaurant .btn__commander p {
-  padding-left: 60px;
+  padding-left: 80px;
   padding-top: 5px;
 }
 
@@ -724,8 +835,6 @@ section.section__restaurant .meal__rotate {
           align-items: baseline;
   width: 90px;
   height: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 section.section__restaurant .meal__rotate .meal__rotate__box {
@@ -757,7 +866,6 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .fonctionnement .fonction {
@@ -772,7 +880,36 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 900px) {
+  .fonctionnement .fonction {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.fonctionnement .bouton {
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  width: 85%;
+}
+
+@media screen and (min-width: 900px) {
+  .fonctionnement .bouton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+  }
+}
+
 .fonctionnement .btn__fonctionnement {
+  position: relative;
   background-color: #f5f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,10 +932,12 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
 .fonctionnement .btn__fonctionnement--number {
   position: absolute;
   padding: 3px 8px 3px 8px;
-  left: 5%;
+  left: 0%;
+  margin-left: -15px;
   background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border-radius: 50%;
+  color: #fff;
 }
 
 .fonctionnement .btn__fonctionnement i {
@@ -806,8 +945,20 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
   margin-right: 20px;
 }
 
+@media screen and (min-width: 900px) {
+  .fonctionnement .btn__fonctionnement i {
+    margin-left: 10px;
+  }
+}
+
 .fonctionnement .btn__fonctionnement p {
-  font-size: 20px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 900px) {
+  .fonctionnement .btn__fonctionnement p {
+    font-size: 17px;
+  }
 }
 
 .fonctionnement .btn__fonctionnement:hover {
