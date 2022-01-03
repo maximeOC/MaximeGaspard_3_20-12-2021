@@ -6,7 +6,7 @@ html, body {
   margin: 0;
 }
 
-h1 {
+h1, h2 {
   font-family: Shrikhand;
 }
 
@@ -15,11 +15,16 @@ h1 {
   left: 50%;
   -webkit-transform: translateX(-51%);
           transform: translateX(-51%);
-  bottom: 4px;
+  bottom: 3px;
   font-size: 0;
   font-weight: bold;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
+  background: content-box -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background: content-box linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @-webkit-keyframes rotation {
@@ -368,6 +373,7 @@ header a i {
   max-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-image: fixed;
 }
 
 .place {
@@ -605,7 +611,7 @@ section.section__restaurant .name__restaurant {
   position: relative;
 }
 
-section.section__restaurant .name__restaurant h1 {
+section.section__restaurant .name__restaurant h2 {
   padding-right: 70px;
   padding-top: 10px;
 }
@@ -638,6 +644,7 @@ section.section__restaurant .name__restaurant .card__heart:hover .animation {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 15px;
+    height: 400px;
   }
 }
 
@@ -674,10 +681,27 @@ section.section__restaurant .meal__entree-1, section.section__restaurant .meal__
   overflow: hidden;
 }
 
+section.section__restaurant .meal__entree-1:hover .meal__repas, section.section__restaurant .meal__entree-2:hover .meal__repas, section.section__restaurant .meal__entree-3:hover .meal__repas, section.section__restaurant .meal__entree-4:hover .meal__repas {
+  margin-right: 3em;
+  -webkit-transition: margin-right .5s ease-in-out;
+  transition: margin-right .5s ease-in-out;
+}
+
+section.section__restaurant .meal__entree-1 .meal__repas, section.section__restaurant .meal__entree-2 .meal__repas, section.section__restaurant .meal__entree-3 .meal__repas, section.section__restaurant .meal__entree-4 .meal__repas {
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__entree-1 .meal__repas h4, section.section__restaurant .meal__entree-1 .meal__repas p, section.section__restaurant .meal__entree-2 .meal__repas h4, section.section__restaurant .meal__entree-2 .meal__repas p, section.section__restaurant .meal__entree-3 .meal__repas h4, section.section__restaurant .meal__entree-3 .meal__repas p, section.section__restaurant .meal__entree-4 .meal__repas h4, section.section__restaurant .meal__entree-4 .meal__repas p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
 section.section__restaurant .meal__entree-1:hover .meal__rotate, section.section__restaurant .meal__entree-2:hover .meal__rotate, section.section__restaurant .meal__entree-3:hover .meal__rotate, section.section__restaurant .meal__entree-4:hover .meal__rotate {
   margin-right: -0.5em;
-  -webkit-transition: margin-right 1s ease-in-out;
-  transition: margin-right 1s ease-in-out;
+  -webkit-transition: margin-right .5s ease-in-out;
+  transition: margin-right .5s ease-in-out;
 }
 
 section.section__restaurant .meal__entree-1:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__entree-2:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__entree-3:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__entree-4:hover .meal__rotate .circle-rotate {
@@ -720,10 +744,27 @@ section.section__restaurant .meal__plat-1, section.section__restaurant .meal__pl
   overflow: hidden;
 }
 
+section.section__restaurant .meal__plat-1:hover .meal__repas, section.section__restaurant .meal__plat-2:hover .meal__repas, section.section__restaurant .meal__plat-3:hover .meal__repas {
+  margin-right: 3em;
+  -webkit-transition: margin-right .5s ease-in-out;
+  transition: margin-right .5s ease-in-out;
+}
+
+section.section__restaurant .meal__plat-1 .meal__repas, section.section__restaurant .meal__plat-2 .meal__repas, section.section__restaurant .meal__plat-3 .meal__repas {
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__plat-1 .meal__repas h4, section.section__restaurant .meal__plat-1 .meal__repas p, section.section__restaurant .meal__plat-2 .meal__repas h4, section.section__restaurant .meal__plat-2 .meal__repas p, section.section__restaurant .meal__plat-3 .meal__repas h4, section.section__restaurant .meal__plat-3 .meal__repas p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
 section.section__restaurant .meal__plat-1:hover .meal__rotate, section.section__restaurant .meal__plat-2:hover .meal__rotate, section.section__restaurant .meal__plat-3:hover .meal__rotate {
   margin-right: -0.5em;
-  -webkit-transition: margin-right 1s ease-in-out;
-  transition: margin-right 1s ease-in-out;
+  -webkit-transition: margin-right 0.5s ease-in-out;
+  transition: margin-right 0.5s ease-in-out;
 }
 
 section.section__restaurant .meal__plat-1:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__plat-2:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__plat-3:hover .meal__rotate .circle-rotate {
@@ -766,10 +807,27 @@ section.section__restaurant .meal__dessert-1, section.section__restaurant .meal_
   overflow: hidden;
 }
 
+section.section__restaurant .meal__dessert-1:hover .meal__repas, section.section__restaurant .meal__dessert-2:hover .meal__repas, section.section__restaurant .meal__dessert-3:hover .meal__repas {
+  margin-right: 3em;
+  -webkit-transition: margin-right .5s ease-in-out;
+  transition: margin-right .5s ease-in-out;
+}
+
+section.section__restaurant .meal__dessert-1 .meal__repas, section.section__restaurant .meal__dessert-2 .meal__repas, section.section__restaurant .meal__dessert-3 .meal__repas {
+  overflow: hidden;
+}
+
+section.section__restaurant .meal__dessert-1 .meal__repas h4, section.section__restaurant .meal__dessert-1 .meal__repas p, section.section__restaurant .meal__dessert-2 .meal__repas h4, section.section__restaurant .meal__dessert-2 .meal__repas p, section.section__restaurant .meal__dessert-3 .meal__repas h4, section.section__restaurant .meal__dessert-3 .meal__repas p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
 section.section__restaurant .meal__dessert-1:hover .meal__rotate, section.section__restaurant .meal__dessert-2:hover .meal__rotate, section.section__restaurant .meal__dessert-3:hover .meal__rotate {
   margin-right: -0.5em;
-  -webkit-transition: margin-right 1s ease-in-out;
-  transition: margin-right 1s ease-in-out;
+  -webkit-transition: margin-right .5s ease-in-out;
+  transition: margin-right .5s ease-in-out;
 }
 
 section.section__restaurant .meal__dessert-1:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__dessert-2:hover .meal__rotate .circle-rotate, section.section__restaurant .meal__dessert-3:hover .meal__rotate .circle-rotate {
@@ -826,18 +884,18 @@ section.section__restaurant .meal__rotate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90px;
-  height: 100%;
+  height: 60px;
 }
 
 section.section__restaurant .meal__rotate .meal__rotate__box {
   background-color: #99E2D0;
   color: #fff;
-  width: 100%;
-  height: 100%;
+  width: 90px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,7 +906,11 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 10px;
-  font-size: 1.5em;
+  font-size: 2em;
+}
+
+section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
+  display: inline-block;
 }
 
 .fonctionnement {

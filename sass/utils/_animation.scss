@@ -2,11 +2,14 @@
     position: absolute;
     left: 50%;
     transform: translateX(-51%);
-    bottom: 4px;
+    bottom: 3px;
     font-size: 0;
     font-weight: bold;
     transition-duration: 0.7s;
-    //background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: content-box linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);   
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @keyframes rotation

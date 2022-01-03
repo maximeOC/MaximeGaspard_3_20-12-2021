@@ -87,10 +87,12 @@
                     bottom: 17px;
                     font-size: 1.4em;
                     cursor: pointer;
+                    
                     @include breakpoint(tablette)
                     {
                         right: 5px;
                     }
+
                     &:hover .animation
                     {
                         font-size: 21px;
@@ -118,7 +120,7 @@ section.section__restaurant
             margin-bottom: 20px;
             position:relative;
 
-            h1 {
+            h2 {
                 padding-right: 70px;
                 padding-top: 10px;
             }
@@ -146,6 +148,7 @@ section.section__restaurant
             flex-direction: row;
             justify-content: space-evenly;
             padding:15px;
+            height: 400px;
         }
     }
     
@@ -164,16 +167,40 @@ section.section__restaurant
                     position: relative;
                     @include card-meal;
                     overflow: hidden;
+
+                    &:hover .meal__repas
+                {
+                    margin-right: 3em ;
+                    transition: margin-right .5s ease-in-out;
+                }
+                    & .meal__repas
+                    {
+                        overflow: hidden;
+                    
+                        h4 , p {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width: 90%;
+                            
+                        }
+
+                    
+                            
+                    }
+                    
                     &:hover .meal__rotate
                     {
                         margin-right: -0.5em ;
-                        transition: margin-right 1s ease-in-out;
+                        transition: margin-right .5s ease-in-out;
                         .circle-rotate
                         {
                             animation: rotation;
                         animation-duration: 1s;
                         }
                     }
+
+                    
                 }
 
         }
@@ -193,10 +220,28 @@ section.section__restaurant
                 @include card-meal;
                 position: relative;
                 overflow: hidden;
+                &:hover .meal__repas
+                {
+                    margin-right: 3em ;
+                    transition: margin-right .5s ease-in-out;
+                }
+                    & .meal__repas
+                    {
+                        overflow: hidden;
+                    
+                        h4 , p {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width: 90%;
+                            
+                        }
+                    }
+
                 &:hover .meal__rotate
                     {
                         margin-right: -0.5em ;
-                        transition: margin-right 1s ease-in-out;
+                        transition: margin-right 0.5s ease-in-out;
                         
                         .circle-rotate
                         {
@@ -207,7 +252,7 @@ section.section__restaurant
             }
 
 
-        }     
+    }     
         
     .meal__dessert
     {
@@ -225,11 +270,27 @@ section.section__restaurant
                 position: relative;
                     @include card-meal;
                     overflow: hidden;
-            
+                    &:hover .meal__repas
+                {
+                    margin-right: 3em ;
+                    transition: margin-right .5s ease-in-out;
+                }
+                    & .meal__repas
+                    {
+                        overflow: hidden;
+                    
+                        h4 , p {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            width: 90%;
+                            
+                        }
+                    }
                     &:hover .meal__rotate 
                     {
                         margin-right: -0.5em ;
-                        transition: margin-right 1s ease-in-out;
+                        transition: margin-right .5s ease-in-out;
                         
 
                         .circle-rotate
@@ -237,13 +298,13 @@ section.section__restaurant
                             animation: rotation;
                             animation-duration: 1s;
                         }
-                        
-                        
                     }
 
 
-         }
-}
+                    
+                
+            }
+    }
 
 .boutonbloc
 {
@@ -269,30 +330,39 @@ section.section__restaurant
         }
     }
 
-.meal__rotate
-                {
-                    position: absolute;
-                    margin-right: -4em;
-                    top: 0px;
-                    right: 5px;
-                    display: flex;
-                    align-items: baseline;
-                    width: 90px;
-                    height: 100%;
-                    
-                    .meal__rotate__box
-                {
-                    background-color: $color-tertiary;
-                
-                    color: #fff;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: 10px;
-                    font-size: 1.5em;
-                }                   
+    .meal__rotate
+    {
+        position: absolute;
+        margin-right: -4em;
+        top: 0px;
+        right: 5px;
+        display: flex;
+        align-items: center;
+        width: 90px;
+        height: 60px;
+        
+        
+        .meal__rotate__box
+    {
+        background-color: $color-tertiary;
+        color: #fff;
+        width: 90px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-left: 10px;
+        font-size: 2em;
+
+        & .circle-rotate
+        {
+            display: inline-block;
+            
+            
+        }
+    }                   
 }
+
+
 }
 
