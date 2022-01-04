@@ -3,6 +3,8 @@
 {
     font-size: MEDIUM;
     @include center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 header a
@@ -45,11 +47,10 @@ header a
     padding: 15px;
     height: 20%;
     background-color: rgba(201, 193, 193, 0.384);
-
     .searchInput
     {
         border: none;
-        background-color: rgba(201, 193, 193, 0.384);
+        background-color: rgba(201, 193, 193, 0.384); 
         color: black;
         font-size: 15px;
         font-weight: bold;

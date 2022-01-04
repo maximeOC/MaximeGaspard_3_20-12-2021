@@ -7,9 +7,11 @@
     .restaurant
     {
         font-weight: bold;
-        font-size: 20px;
-        padding-left: 22px;
+        font-size: 23px;
+        padding-left: 20px;
         padding-top: 15px;
+        margin-bottom: 18px;
+    
         @include breakpoint(tablette)
         {
             display: flex;
@@ -36,10 +38,10 @@
             img 
             {
                  width:100%;
-                height: 150px;
+                height: 190px;
                 object-fit: cover;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
             }
             
             span
