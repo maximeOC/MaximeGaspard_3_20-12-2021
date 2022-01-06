@@ -2,7 +2,9 @@ footer
     {
         
         background-color: #353535;
-        padding-bottom: 10px;
+        padding-bottom: 15px;  
+        width: 100%;
+        
         .flex
         {
             display: flex;
@@ -13,6 +15,8 @@ footer
             {
                 display: flex;
                 justify-content: center;
+                top: 250px;
+                bottom: 250px;
             }
         
         }
@@ -51,3 +55,22 @@ footer
             color: #fff;
         }
     }
+
+.footer__restaurant
+{
+    position: absolute;
+    top: 1350px;
+    @include breakpoint(tablette)
+    {
+        top: 870px;
+    }
+}
+.footer__restaurant__note
+{
+    position: absolute;
+    top: 1430px;
+    @include breakpoint(tablette)
+    {
+        top: 870px;
+    }
+}

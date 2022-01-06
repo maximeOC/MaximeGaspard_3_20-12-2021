@@ -6,17 +6,18 @@ html, body {
   margin: 0;
 }
 
-h1, h2 {
+h2, .header__name {
   font-family: Shrikhand;
 }
 
 .animation {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-51%);
-          transform: translateX(-51%);
-  bottom: 3px;
+  -webkit-transform: translateX(-49%);
+          transform: translateX(-49%);
+  bottom: 2px;
   font-size: 0;
+  height: auto;
   font-weight: bold;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
@@ -263,7 +264,8 @@ h1, h2 {
 
 footer {
   background-color: #353535;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  width: 100%;
 }
 
 footer .flex {
@@ -283,6 +285,8 @@ footer .flex {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    top: 250px;
+    bottom: 250px;
   }
 }
 
@@ -331,16 +335,38 @@ footer a {
   color: #fff;
 }
 
+.footer__restaurant {
+  position: absolute;
+  top: 1350px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer__restaurant {
+    top: 870px;
+  }
+}
+
+.footer__restaurant__note {
+  position: absolute;
+  top: 1430px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer__restaurant__note {
+    top: 870px;
+  }
+}
+
 .header__name {
-  font-size: MEDIUM;
+  font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 header a {
@@ -354,12 +380,12 @@ header a {
   color: black;
 }
 
-header a h1 {
+header a h2 {
   margin-left: 25%;
 }
 
 @media screen and (min-width: 900px) {
-  header a h1 {
+  header a h2 {
     margin-left: 40%;
   }
 }
@@ -375,7 +401,6 @@ header a i {
   max-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  background-image: fixed;
 }
 
 .place {
@@ -443,7 +468,8 @@ header a i {
   cursor: pointer;
   margin-top: 25px;
   margin-bottom: 25px;
-  scale: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
@@ -582,7 +608,8 @@ header a i {
   position: absolute;
   right: 28px;
   bottom: 17px;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  width: 18.5px;
   cursor: pointer;
 }
 
@@ -601,8 +628,9 @@ section.section__restaurant {
   border-top-right-radius: 30PX;
   border-top-left-radius: 30px;
   width: 100%;
-  position: absolute;
-  top: 250px;
+  position: relative;
+  bottom: 25px;
+  padding-bottom: 20px;
 }
 
 section.section__restaurant .name__restaurant {
@@ -625,7 +653,7 @@ section.section__restaurant .name__restaurant .card__heart {
   position: absolute;
   right: 50px;
   bottom: 3px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   cursor: pointer;
 }
 
@@ -968,6 +996,7 @@ section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 90%;
+    margin: 10px;
   }
 }
 

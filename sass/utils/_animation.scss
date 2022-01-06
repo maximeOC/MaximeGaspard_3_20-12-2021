@@ -1,9 +1,10 @@
 .animation{
     position: absolute;
     left: 50%;
-    transform: translateX(-51%);
-    bottom: 3px;
+    transform: translateX(-49%);
+    bottom: 2px;
     font-size: 0;
+    height: auto;
     font-weight: bold;
     transition-duration: 0.7s;
     background: content-box linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);   

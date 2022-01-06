@@ -63,7 +63,6 @@
             {
                 text-decoration: none;
             }
-
             .card__new
             {
                 position: absolute;
@@ -87,7 +86,8 @@
                     position: absolute;
                     right: 28px;
                     bottom: 17px;
-                    font-size: 1.4em;
+                    font-size: 1.2em;
+                    width: 18.5px;
                     cursor: pointer;
                     
                     @include breakpoint(tablette)
@@ -112,10 +112,11 @@ section.section__restaurant
     border-top-right-radius: 30PX;
     border-top-left-radius: 30px;
     width: 100%;
-    position: absolute;
-    top: 250px;
+    position: relative;
+    bottom: 25px;
+    padding-bottom: 20px;
     
-    
+
     .name__restaurant
         {
             @include name_restaurant;
@@ -131,9 +132,9 @@ section.section__restaurant
                     position: absolute;
                     right: 50px;
                     bottom: 3px;
-                    font-size: 1.4em;
-                    cursor: pointer;
-
+                    font-size: 1.2em;
+                    cursor: pointer;                        
+                    
                     &:hover .animation
                     {
                         font-size: 21px;
