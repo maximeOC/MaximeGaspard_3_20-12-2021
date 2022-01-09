@@ -1,4 +1,4 @@
-html, body {
+body {
   font-family: roboto;
 }
 
@@ -15,7 +15,7 @@ h2, .header__name {
   left: 50%;
   -webkit-transform: translateX(-49%);
           transform: translateX(-49%);
-  bottom: 2px;
+  bottom: 1.5px;
   font-size: 0;
   height: auto;
   font-weight: bold;
@@ -724,7 +724,7 @@ section.section__restaurant .meal__entree-1 .meal__repas, section.section__resta
   overflow: hidden;
 }
 
-section.section__restaurant .meal__entree-1 .meal__repas h4, section.section__restaurant .meal__entree-1 .meal__repas p, section.section__restaurant .meal__entree-2 .meal__repas h4, section.section__restaurant .meal__entree-2 .meal__repas p, section.section__restaurant .meal__entree-3 .meal__repas h4, section.section__restaurant .meal__entree-3 .meal__repas p, section.section__restaurant .meal__entree-4 .meal__repas h4, section.section__restaurant .meal__entree-4 .meal__repas p {
+section.section__restaurant .meal__entree-1 .meal__repas h3, section.section__restaurant .meal__entree-1 .meal__repas p, section.section__restaurant .meal__entree-2 .meal__repas h3, section.section__restaurant .meal__entree-2 .meal__repas p, section.section__restaurant .meal__entree-3 .meal__repas h3, section.section__restaurant .meal__entree-3 .meal__repas p, section.section__restaurant .meal__entree-4 .meal__repas h3, section.section__restaurant .meal__entree-4 .meal__repas p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -787,7 +787,7 @@ section.section__restaurant .meal__plat-1 .meal__repas, section.section__restaur
   overflow: hidden;
 }
 
-section.section__restaurant .meal__plat-1 .meal__repas h4, section.section__restaurant .meal__plat-1 .meal__repas p, section.section__restaurant .meal__plat-2 .meal__repas h4, section.section__restaurant .meal__plat-2 .meal__repas p, section.section__restaurant .meal__plat-3 .meal__repas h4, section.section__restaurant .meal__plat-3 .meal__repas p {
+section.section__restaurant .meal__plat-1 .meal__repas h3, section.section__restaurant .meal__plat-1 .meal__repas p, section.section__restaurant .meal__plat-2 .meal__repas h3, section.section__restaurant .meal__plat-2 .meal__repas p, section.section__restaurant .meal__plat-3 .meal__repas h3, section.section__restaurant .meal__plat-3 .meal__repas p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -850,7 +850,7 @@ section.section__restaurant .meal__dessert-1 .meal__repas, section.section__rest
   overflow: hidden;
 }
 
-section.section__restaurant .meal__dessert-1 .meal__repas h4, section.section__restaurant .meal__dessert-1 .meal__repas p, section.section__restaurant .meal__dessert-2 .meal__repas h4, section.section__restaurant .meal__dessert-2 .meal__repas p, section.section__restaurant .meal__dessert-3 .meal__repas h4, section.section__restaurant .meal__dessert-3 .meal__repas p {
+section.section__restaurant .meal__dessert-1 .meal__repas h3, section.section__restaurant .meal__dessert-1 .meal__repas p, section.section__restaurant .meal__dessert-2 .meal__repas h3, section.section__restaurant .meal__dessert-2 .meal__repas p, section.section__restaurant .meal__dessert-3 .meal__repas h3, section.section__restaurant .meal__dessert-3 .meal__repas p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -995,8 +995,7 @@ section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 90%;
-    margin: 10px;
+    width: 95%;
   }
 }
 
