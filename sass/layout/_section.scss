@@ -11,6 +11,7 @@
         padding-left: 20px;
         padding-top: 15px;
         margin-bottom: 18px;
+        font-family: roboto ;
     
         @include breakpoint(tablette)
         {
@@ -318,7 +319,7 @@ section.section__restaurant
     .btn__commander
     {
         @include btn-commander ;
-        scale: 1;
+        transform: scale(1);
         transition: all 300ms;
         &:hover
         {

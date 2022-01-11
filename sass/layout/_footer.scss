@@ -59,7 +59,7 @@ footer
 .footer__restaurant
 {
     position: absolute;
-    top: 1350px;
+    top: 1340px;
     @include breakpoint(tablette)
     {
         top: 870px;
@@ -68,7 +68,7 @@ footer
 .footer__restaurant__note
 {
     position: absolute;
-    top: 1430px;
+    top: 1420px;
     @include breakpoint(tablette)
     {
         top: 870px;
