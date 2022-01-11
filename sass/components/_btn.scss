@@ -36,7 +36,7 @@
     .btn__fonctionnement
     {
         position: relative;
-        
+        margin: 15px;
         
         @include btn-fonctionnement;
             &--number 
@@ -57,7 +57,7 @@
             margin-right: 20px;
             @include breakpoint(tablette)
         {
-            margin-left: 10px;
+            margin-left: 20px;
         }
             
         }

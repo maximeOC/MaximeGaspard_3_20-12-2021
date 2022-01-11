@@ -30,8 +30,8 @@ h2, .header__name {
 
 @-webkit-keyframes rotation {
   from {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -41,8 +41,8 @@ h2, .header__name {
 
 @keyframes rotation {
   from {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -941,7 +941,7 @@ section.section__restaurant .meal__rotate .meal__rotate__box {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 10px;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
@@ -1004,6 +1004,7 @@ section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
 
 .fonctionnement .btn__fonctionnement {
   position: relative;
+  margin: 15px;
   background-color: #f5f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1042,7 +1043,7 @@ section.section__restaurant .meal__rotate .meal__rotate__box .circle-rotate {
 
 @media screen and (min-width: 900px) {
   .fonctionnement .btn__fonctionnement i {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
